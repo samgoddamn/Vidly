@@ -10,12 +10,19 @@
 <div>
     <h4>Customer</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-    </dl>
+    <table>
+        <tr>
+            <td>@Model.Name</td>
+        </tr>
+        @{ 
+            if(@Model.BirthDate != null)
+            {
+                <tr>
+                    <td>@string.Format("{0:yyyy-MM-dd}", @Model.BirthDate)</td>
+                </tr>
+            }
+        }
+    </table>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
