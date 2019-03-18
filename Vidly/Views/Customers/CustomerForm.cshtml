@@ -30,15 +30,11 @@
         </label>
     </div>
     @Html.HiddenFor(m => m.Customer.Id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
 }
 
 @section scripts
 {
     @Scripts.Render("~/bundles/jqueryval")
-    <div class="form-group">
-        <label for="@Html.NameFor(m => m.Customer.MembershipTypeId)">Membership Type</label>
-        @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Membership Type", new { @class = "form-control", @id = @Html.NameFor(m => m.Customer.BirthDate) })
-        @Html.ValidationMessageFor(m => m.Customer.MembershipTypeId)
-    </div>
 }

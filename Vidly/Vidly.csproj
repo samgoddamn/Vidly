@@ -229,6 +229,14 @@
     <Compile Include="Migrations\201903131104426_MembershipTypeNameRequired.Designer.cs">
       <DependentUpon>201903131104426_MembershipTypeNameRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903131145115_MovieAttributesAdded.cs" />
+    <Compile Include="Migrations\201903131145115_MovieAttributesAdded.Designer.cs">
+      <DependentUpon>201903131145115_MovieAttributesAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903131318080_MovieAttributesChanged.cs" />
+    <Compile Include="Migrations\201903131318080_MovieAttributesChanged.Designer.cs">
+      <DependentUpon>201903131318080_MovieAttributesChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -362,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903131104426_MembershipTypeNameRequired.resx">
       <DependentUpon>201903131104426_MembershipTypeNameRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903131145115_MovieAttributesAdded.resx">
+      <DependentUpon>201903131145115_MovieAttributesAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903131318080_MovieAttributesChanged.resx">
+      <DependentUpon>201903131318080_MovieAttributesChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
