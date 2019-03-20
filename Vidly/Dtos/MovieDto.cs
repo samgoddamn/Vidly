@@ -21,10 +21,5 @@ namespace Vidly.Dtos
         public int NumberInStock { get; set; }
 
         public byte GenreId { get; set; }
-
-        public MovieDto()
-        {
-            DateAdded = DateTime.Now;
-        }
     }
 }
