@@ -208,6 +208,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -216,6 +217,7 @@
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -288,6 +290,14 @@
     <Compile Include="Migrations\201908121147502_AddPhoneToAccountViewModel.Designer.cs">
       <DependentUpon>201908121147502_AddPhoneToAccountViewModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908131205420_AddRental.cs" />
+    <Compile Include="Migrations\201908131205420_AddRental.Designer.cs">
+      <DependentUpon>201908131205420_AddRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908131229286_AddNumberAvailableOnMovie.cs" />
+    <Compile Include="Migrations\201908131229286_AddNumberAvailableOnMovie.Designer.cs">
+      <DependentUpon>201908131229286_AddNumberAvailableOnMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -303,6 +313,7 @@
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\ResetPasswordViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Models\SendCodeViewModel.cs" />
@@ -548,7 +559,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -654,6 +667,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908121147502_AddPhoneToAccountViewModel.resx">
       <DependentUpon>201908121147502_AddPhoneToAccountViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908131205420_AddRental.resx">
+      <DependentUpon>201908131205420_AddRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908131229286_AddNumberAvailableOnMovie.resx">
+      <DependentUpon>201908131229286_AddNumberAvailableOnMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
