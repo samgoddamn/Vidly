@@ -11,11 +11,11 @@ using System.Data.Entity;
 
 namespace Vidly.Controllers.Api
 {
-    public class NewRentalController : ApiController
+    public class NewRentalsController : ApiController
     {
         private ApplicationDbContext _context;
 
-        public NewRentalController()
+        public NewRentalsController()
         {
             _context = new ApplicationDbContext();
         }
