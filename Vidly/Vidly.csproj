@@ -303,6 +303,10 @@
     <Compile Include="Migrations\201908141159331_AddNumberAvailableOnMovies.Designer.cs">
       <DependentUpon>201908141159331_AddNumberAvailableOnMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908141251325_MakeReturnedDateNullableOnRental.cs" />
+    <Compile Include="Migrations\201908141251325_MakeReturnedDateNullableOnRental.Designer.cs">
+      <DependentUpon>201908141251325_MakeReturnedDateNullableOnRental.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -443,6 +447,8 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -475,6 +481,8 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -554,6 +562,8 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\typeahead.bundle.js" />
     <Content Include="Scripts\typeahead.bundle.min.js" />
     <Content Include="Scripts\typeahead.jquery.js" />
@@ -689,6 +699,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908141159331_AddNumberAvailableOnMovies.resx">
       <DependentUpon>201908141159331_AddNumberAvailableOnMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908141251325_MakeReturnedDateNullableOnRental.resx">
+      <DependentUpon>201908141251325_MakeReturnedDateNullableOnRental.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
